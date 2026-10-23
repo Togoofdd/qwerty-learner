@@ -37,9 +37,6 @@ function Root() {
   useEffect(() => {
     const handleResize = () => {
       const isMobile = window.innerWidth <= 600
-      if (!isMobile) {
-        window.location.href = '/'
-      }
       setIsMobile(isMobile)
     }
 
@@ -76,3 +73,4 @@ function Root() {
 const container = document.getElementById('root')
 
 container && createRoot(container).render(<Root />)
+
